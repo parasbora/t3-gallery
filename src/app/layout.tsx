@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 function TopNav(){
   return (
     <nav className="flex w-full items-center justify-between p-4 text-xl font-semibold border-b">
-      <div>Gallery</div>
+      <div>Gallery x</div>
       <div>Sign In</div>
 
     </nav>
@@ -22,8 +22,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" >
-      <body className={`${GeistSans.variable} flex flex-col gap-4`}>
+    <html lang="en" className={`${GeistSans.variable}`}>
+      <body className={`flex flex-col gap-4`}>
         <TopNav/>
         {children}
       </body>
